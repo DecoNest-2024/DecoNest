@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecoNest</title> 
+
+    <script src="java-scrip.js"></script> 
+     <link rel="stylesheet" href="css/style.css">  <!--para agregar css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- para agregar iconoes de font font-awesome -->
+
+</head>
+<body>
+    <header class="contenido-header">
+        <div class="contenedor-header">
+
+
+            <div class="header-1">
+                <div class="contenedor-header-1">
+                    <div class="contenido-header-1">
+                        <div class="correo-telefono">
+                            <div class="icono-telefono-correo">
+                                <a href="mailto:DecoNest2014@gmail.com" class="icono-correo">
+                                    <i class="fas fa-envelope"></i> <!--  icono correo  -->
+                                    <span class="tooltip" id="tooltipCorreo">DecoNest2014@gmail.com</span>
+                                </a>
+                                <a href="tel:+51965288617" class="icono-telefono">
+                                    <i class="fas fa-phone"></i>  <!--  icono telefono-->
+                                    <span class="tooltip" id="tooltipTelefono">+519 65288617</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+
+                        <div class="espacio-header">
+                        </div>
+
+                        <div class="redes-sociales">
+                            <a href="https://www.facebook.com/profile.php?id=61567924079544&mibextid=ZbWKwL" target="_blank" class="icono-facebook">
+                                <i class="fab fa-facebook"></i>  <!--  icono facebook -->
+                                <span class="tooltip">Siguenos en Facebook</span>
+                            </a>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fdeconest_2014%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR2sRvHziZcenfsv5s68wrat3PBKuwBVSWYlQsl1nqFoS_GDJ6SfXIhQF90_aem_r8g15Ft03BNeHjLE26lG-w&h=AT0jI6A0PqcI6pKFp4FA_-zkYo_qSgwycML3vEjsONBnoauAFrt5OcRQb_VyOdF2IRuT5KohDkmhG3cbWkQZWE5rwoebVG6dRakhtIAte5-Cq3iJ3OQZhq2i8_X265XDNkoL" target="_blank" class="icono-instagram">
+                                <i class="fab fa-instagram"></i>   <!--  icono instagram -->
+                                <span class="tooltip">Siguenos en Instagram</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="header-2">
+                <div class="contenedor-header-2">
+                    <div class="contenido-header-2">
+
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo2.jpg" alt="logo de la empresa">
+                            </a>
+                        </div>
+                        
+                        <div class="navegador-site">
+                            <nav class="nav">
+                                <button class="boton-menu" id="menuToggle">
+                                    <i class="fas fa-bars"></i> <!-- Icono de menú -->
+                                </button>
+                                <div class="menu" id="menu">
+                                    <ul class="list">
+                                        <li><a href="contactanos.html">Inicio</a></li>
+                                        <li><a href="contactanos.html">Contáctanos</a></li>
+                                        <li><a href="nosotros.html">Nosotros</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Buscar..." id="searchInput">
+                            <button class="search-icon" id="searchButton">
+                                <i class="fas fa-search"></i> <!-- Icono de búsqueda -->
+                            </button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </header>
+
+    
+    <main class="contact-section">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte con todas tus dudas y personalizaciones de muebles.</p>
+
+        <div class="contact-details">
+            <h2>Información de Contacto</h2>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:DecoNest2014@gmail.com">DecoNest2014@gmail.com</a>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+591965288617">+591 965288617</a>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Av. Ejemplo #123, Santa Cruz, Bolivia</span>
+            </div>
+        </div>
+
+        <form action="enviar_contacto.php" method="POST" class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </main>
+
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/591965288617?text=¡Hola!%20Quisiera%20personalizar%20mis%20muebles%20con%20DecoNest." class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i> Personaliza tus muebles
+    </a>
+
+    <footer class="contenido-footer">
+        <div class="contenedor-footer">
+            <div class="footer-1">
+                <div class="footer-2">
+                    <div class="conteiner-footer">
+                        <!-- <nav class="main-nav">
+                            <ul>
+                                <li><a href="#">Productos</a></li>
+                                <li><a href="#">Contactanos</a></li>
+                                <li><a href="nosotros.html">Nosotros</a></li>
+                            </ul>
+                        </nav> -->
+                        <p class="copyright">Copyright &copy; 2023 DecoNest</p>
+            
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
